@@ -1,0 +1,375 @@
+body {
+  background-color: #f6f7f9;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.layout{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header{
+  background-color: white;
+  display: flex;
+  height: 132px;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 1px solid #444; */
+  box-shadow: 0px 0px 6px #ddd;
+  border-radius: 7px;
+  padding: 25px;
+  padding-left: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.header .logo{
+  flex-grow: 2;
+
+  display: flex;
+  /* margin-left: 50px; */
+}
+
+.header .logo h2{
+  display: block;
+  flex-basis: 50px;
+  text-align: end;
+  font-size: 25px;
+  border-right: 3px solid #333;
+  padding-right: 20px;
+  text-shadow: 0px 0px 6px #777;
+}
+
+.header .logo h2:hover,
+.header .logo p:hover{
+  text-shadow: 0px 0px 6px #3f888f;
+  transform: scale(1.1, 1.1);
+  transition: all 250ms;
+  cursor: pointer;
+}
+.header .logo p{
+  display: block;
+  flex-basis: 50px;
+  text-align: start;
+  padding-left: 20px;
+  font-size: 25px;
+  font-weight: lighter;
+  line-height: 25px;
+  text-shadow: 0px 0px 6px #777;
+  /* text-decoration: underline; */
+}
+
+
+.header nav{
+  flex-grow: 1;
+}
+
+.header nav ul{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  height: 132px;
+}
+
+.header li{
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* text-transform: uppercase; */
+  font-size: 17px;
+  font-weight: bold;
+  /* padding: 10px; */
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 6px #ddd;
+}
+
+.header li a{
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 7px;
+  text-decoration: none;
+  color: #333;
+  transition: all 300ms;
+}
+.header li:hover{
+   transform: scale(1.1, 1.1);
+   box-shadow: 0px 0px 6px #3f888f;
+  
+}
+
+.header a:hover{ 
+  color: #3f888f;
+  
+}
+
+.header .activado {
+  color: #3f888f;
+  box-shadow: 0px 0px 6px #3f888f;
+}
+
+.content{
+  background-color: white;
+  /* text-align: center; */
+  padding: 50px;
+  min-height: 500px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 6px #ddd;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  color: #444;
+  
+  /* background-color: #f5f5f5; */
+}
+
+
+.home h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 56px;
+  text-align: justify;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.home strong{
+  color: #3f888f;
+}
+
+.home .title{
+  color: #444;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+
+.home .title a {
+  text-decoration: none;
+  color: white;
+  background-color: #3f888f;
+  border-radius: 7px;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 15px;
+  transition: all 300ms;
+}
+
+
+.home .title a:hover{
+  background-color: coral;
+}
+
+.page .heading,
+.home .heading{
+  font-size: 38px;
+  font-weight: 350;
+  color: black;
+  margin-top: 35px;
+  margin-bottom: 0px;
+  
+}
+
+.home p{
+  color: #444;
+  margin-top: 7px;
+}
+
+/* FIN DE PAGINA DE HOME  */
+
+/* PAGINA DE CONTACTO */
+
+input[type="text"],
+input[type="mail"],
+textarea{
+  display: block;
+  padding: 15px;
+  width: 350px;
+  margin-top: 20px;
+}
+
+input[type="submit"],
+button{
+    display: block;
+    width: 180px;
+    text-decoration: none;
+    color: white;
+    background-color: #3f888f;
+    border-radius: 7px;
+    padding: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 45px;
+    cursor: pointer;
+    transition: all 300ms;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover{
+    background-color: coral;
+  }
+  
+/* FIN DE PAGINA DE CONTACTO */
+
+/* PAGINA DE ERROR 404 */
+
+.error {
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.error h1{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 80px;
+  /* text-transform: uppercase; */
+  color: #333;
+  text-shadow: 0px 0px 6px #777;
+  margin-bottom: 0px;
+}
+
+.error p{
+  color: #444;
+  font-weight: lighter;
+  margin-top: 0px;
+  font-size: 26px;
+}
+
+.error a {
+  display: block;
+  width: 15%;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  background-color: #3f888f;
+  border-radius: 7px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 45px;
+  transition: all 300ms;
+}
+
+.error a:hover{
+  background-color: coral;
+}
+
+/* FINAL DE PAGINA DE ERROR 404 */
+
+/* ITEM DE PORTAFOLIO */
+
+.works{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.works-item{
+  flex-basis: 30%;
+  flex-grow: 1;
+
+  margin: 30px;
+}
+
+.works-item .mask{
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0px 5px 15px #ddd;
+  border: 1px solid #ddd;
+}
+
+.works-item img{
+  width: 120%;
+  transition: all 500ms;
+}
+
+.works-item .mask:hover img{
+  width: 150%;
+  margin-right: 30%;
+}
+
+.works-item span{
+  display: block;
+  color:#777;
+  margin-top: 30px;
+  /* font-style: italic; */
+}
+
+.works-item h2{
+  display: block;
+  font-size: 30px;
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+.works-item > h2 >a {
+  text-decoration: none;
+  color: black;
+  /* text-transform: uppercase; */
+}
+
+.works-item a:hover{
+  color: #3f888f;
+}
+
+.works-item h3{
+  display: block;
+  color: #777;
+  margin-top: 0px;
+  border-top: 1px solid #ddd;
+  padding: 5px;
+}
+
+.page-work .mask{
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0px 5px 15px #ddd;
+  border: 1px solid #ddd;
+}
+
+.page-work .mask img{
+  width: 120%;
+}
+
+.boton{
+  display: block;
+  width: 80px;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  background-color: #3f888f;
+  border-radius: 7px;
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 300ms;
+}
+
+.boton:hover{
+  background-color: coral;
+}
+
+/* FIN DE ITEM DE PORTAFOLIO */
