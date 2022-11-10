@@ -12,16 +12,13 @@ export const ListadoProyectos = ({limite}) => {
                 <div className='mask'>
                   <img src={"/images/" + trabajo.id + ".png"} />
                 </div>
-
                 <span>{trabajo.categoria}</span>
-                <h2><Link to={"../proyecto/"+trabajo.id}>{trabajo.nombre} </Link></h2>
+                <h2><Link to={"../proyecto/"+trabajo.id}>{trabajo.nombre}</Link></h2>
                 <h3> {trabajo.tecnologias} </h3>
               </article>
             )
           })
         }
-
       </section>
-
   )
 }

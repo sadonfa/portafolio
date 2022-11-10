@@ -278,15 +278,15 @@ button{
 .works{
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .works-item{
   flex-basis: 30%;
   flex-grow: 1;
-
   margin: 30px;
 }
+
+
 
 .works-item .mask{
   width: 100%;
